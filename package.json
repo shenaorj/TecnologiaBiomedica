@@ -1,0 +1,17 @@
+{
+  "name": "tecnologiabiomedica",
+  "version": "1.0.0",
+  "description": "campaña de sensibilización sobre el uso de la tecnología biomédica que promueva el cuidado tanto de parte de los pacientes como de los usuarios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public_html/css/tailwind.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3"
+  }
+}

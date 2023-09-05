@@ -1,0 +1,31 @@
+/node_modules
+.github/**/node_modules
+/coverage
+/cli
+/lib
+/peers
+/example
+.vscode
+.DS_Store
+.parcel-cache
+tailwind.config.js
+index.html
+yarn.lock
+yarn-error.log
+types/generated/*.d.ts
+
+# Turbo
+
+.turbo
+
+# Archivos relacionados con el rendimiento
+
+isolate*.log
+
+# Archivos generados
+
+/src/corePluginList.js
+
+# Archivos generados durante las pruebas
+
+/tests/evaluate-tailwind-functions.test.html
