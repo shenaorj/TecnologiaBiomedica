@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="./css/tailwind.css" />
   <title>Campaña tecnología biomédica SIINGMI</title>
 
-  <nav class="justify-between fixed z-30">
-    <nav class="w-10 h-10 md:w-20 md:h-20 bg-white rounded-full grid place-content-center m-1">
+  <nav class="justify-between fixed z-30 lg:hidden">
+    <nav class="w-10 h-10 bg-white rounded-full grid place-content-center m-2 sm:w-16 sm:h-16 sm:m-3 ">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        id="menuMobile" class="w-6 h-6 md:w-12 md:h-12  text-primary">
+        id="menuMobile" class="w-6 h-6 sm:w-8 sm:h-8 text-primary">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
     </nav>
@@ -43,76 +43,104 @@
             onclick="closeMobileMenu()">Cronograma</a>
         </li>
 
-      
+
 
       </ul>
     </div>
   </nav>
+  <nav class="hidden bg-white h-12 w-full lg:flex fixed z-30 justify-center items-center">
+
+    <div class="flex space-x-8 lg:space-x-16 place-content-center">
+
+      <!-- Enlace a la sección Inicio -->
+      <div class="w-56 h-8 rounded-full hover:bg-primary text-center align-middle">
+        <a class=" text-xl  text-secondary dark:text-white" href="#VideoSemanal">Video de la semana</a>
+      </div>
+      <!-- Enlace a la sección Proyectos -->
+      <a class="text-lg  text-primary dark:text-white" href="#Importancia">Importancia</a>
+
+      <!-- Enlace a la sección Noticias -->
+      <a class=" text-lg  text-primary dark:text-white" href="#Objetivos">Objetivos</a>
+
+      <!-- Enlace a la sección Objetivos -->
+      <a class=" text-primary dark:text-white" href="#Cuidados">Cuidados</a>
+
+      <!-- Enlace a la sección Sobre Nosotros -->
+      <a class=" text-lg  text-primary dark:text-white" href="#Cronograma">Cronograma</a>
+    </div>
+
+  </nav>
+
 </head>
 
 <body class="font-Avenir Next tracking-normal">
   <!--  div 1 presentación pagina -->
-  <div class="h-full flex flex-col space-y-5 bg-gradient-to-l from-cyan-100 to-teal-50  hover:bg-gradient-to-r p-6">
+  <div
+    class="h-full flex flex-col items-center space-y-5 bg-gradient-to-l from-cyan-100 to-teal-50 hover:bg-gradient-to-r p-6  ">
 
-    <p id="" class=" text-primary flex-1 text-xl md:text-3xl text-center font-bold pt-5 mt-8">
+    <p id="" class=" text-primary flex-1 text-xl text-center font-bold pt-5 mt-8 sm:text-2xl md:text-3xl 2xl:text-4xl">
       Tecnología Biomédica: “Tu Salud en Tus Manos,Tu Responsabilidad."
     </p>
-
     <!--  videos semanales -->
-
-    <p id="VideoSemanal" class="text-secondary flex-1 text-xl md:text-3xl  text-center font-bold p-4 ">
+    <p id="VideoSemanal" class="text-secondary text-xl text-center font-bold p-4 sm:text-2xl md:text-3xl 2xl:text-4xl">
       Video de la semana
     </p>
-
     <video src="./video/1_objetivo.mp4" controls preload="auto"
-      class="w-full h-full  rounded-md object-cover z-0"></video>
-
-    <img src="./img/h_exito.png" alt="Historias de exito" />
-
-
-    <p class="text-primary flex-1 text-sm md:text-xl text-center">
-      Campaña Tecnologica para el Cuidado de Equipos Biomédicos <br />impulsada por:"
+      class="w-full h-full rounded-md object-cover md:scale-90 lg:w-2/3 "></video>
+    </div>
+    <div class="h-full flex flex-col items-center space-y-5 ">
+    <p class="text-primary text-sm text-center sm:text-lg md:text-xl lg:text-2xl md:p-5 md:my-4">
+      Campaña Tecnologica para el Cuidado de Equipos Biomédicos, <br />impulsada por:
     </p>
-    <img src="./img/siingmi-horo.png" alt="SIINGMI" class="scale-75 flex-1 order-3" />
 
+    <img src="./img/siingmi-horo.png" alt="SIINGMI" class="scale-75 md:scale-95 hover:scale-100" />
+    <img src="./img/h_exito.png" alt="Historias de exito" class=" mt-16 md:scale-75 hover:scale-90" />
   </div>
+
 
   <!--  div 2 ¿por que es importante? -->
   <div id="Importancia"
-    class="w-full h-auto flex flex-col justify-center bg-gradient-to-l from-cyan-100 to-teal-50  hover:bg-gradient-to-r">
-    <p class="text-primary flex-1 relative text-xl md:text-3xl text-center font-bold p-3">
+    class="p-3 w-full h-auto flex flex-col justify-center bg-gradient-to-r from-cyan-100 to-teal-50 ">
+    <p
+      class="text-primary flex-1 relative text-xl text-center font-bold p-6 sm:p-16 sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl lg:px-24 xl:px-36 md:mb-5 lg:mt-5">
       ¿Por qué es importante el cuidado de los equipos biomédicos?
     </p>
 
-    <div class="w-full h-auto flex flex-col  space-y-6 mt-6">
+    <!--  div de seccion funcionamiento  grid grid-cols-2 -->
+    <div class="space-y-8 ">
 
-      <!--  div de seccion funcionamiento -->
+      <div id="toggleFuncionamiento" class="flex flex-row lg:mx-40">
 
-      <div id="toggleFuncionamiento" class="w-full h-38 rounded-3xl bg-white grid grid-cols-2 shadow-xl content-center">
-        <div class="">
-          <img src="./img/educacion.png" alt="">
+
+        <div class="w-1/2 h-48 bg-imp1 bg-cover rounded-l-3xl shadow-xl sm:bg-imp1_sm lg:h-60 lg:bg-imp1_lg 2xl:h-80">
         </div>
-        <div class="m-3">
-          <p class="text-secondary text-lg md:text-3xl text-center md:mt-10">
+        <div
+          class="w-1/2 h-48 bg-white bg-cover rounded-r-3xl flex items-center justify-center shadow-xl lg:h-60 2xl:h-80 ">
+          <p class="text-secondary text-lg text-center sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl ">
             Optimiza el funcionamiento de los equipos
           </p>
         </div>
+
       </div>
 
       <div id="videoFuncionamiento" class="w-full h-auto hidden">
-        <p class="text-secondary text-lg text-justify px-6">
+        <p class="text-secondary text-lg text-justify px-6 ">
           Asegurar que los equipos funcionen de manera óptima y sean
           confiables para su uso en diagnóstico y tratamiento médico.
         </p>
       </div>
 
-      <div id="toggleVidaUtil" class="w-full h-38 rounded-3xl bg-white grid grid-cols-2 shadow-xl">
-        <img src="./img/educacion.png" alt="" />
-        <div class="m-6">
-          <p class="text-secondary text-lg text-center">
+      <div id="toggleVidaUtil" class="flex flex-row lg:mx-40">
+
+        <div class="w-1/2 h-48 bg-imp1 bg-cover rounded-l-3xl shadow-xl sm:bg-imp1_sm lg:h-60 lg:bg-imp1_lg 2xl:h-80">
+        </div>
+        <div
+          class="w-1/2 h-48 bg-white bg-cover rounded-r-3xl flex items-center justify-center shadow-xl lg:h-60 2xl:h-80">
+          <p class="text-secondary text-lg text-center sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
             Prolonga la vida útil de los equipos
           </p>
         </div>
+
       </div>
       <div id="videoVidaUtil" class="w-full h-auto hidden">
         <p class="text-secondary text-lg text-justify px-6">
@@ -120,15 +148,21 @@
         </p>
       </div>
 
-      <div id="toggleSeguridadPacientes"
-        class="w-full h-38 rounded-3xl bg-white grid grid-cols-2 space-x-4 content-center shadow-xl">
-        <img src="./img/educacion.png" alt="" />
-        <div class="m-6">
-          <p class="text-secondary text-lg text-center">
+
+      <div id="toggleSeguridadPacientes" class="flex flex-row lg:mx-40">
+
+        <div class="w-1/2 h-48 bg-imp1 bg-cover rounded-l-3xl shadow-xl sm:bg-imp1_sm lg:h-60 lg:bg-imp1_lg 2xl:h-80">
+        </div>
+        <div
+          class="w-1/2 h-48 bg-white bg-cover rounded-r-3xl flex items-center justify-center shadow-xl lg:h-60 2xl:h-80">
+          <p class="text-secondary text-lg text-center sm:text-xl md:text-2xl lg:text-3xl 2xl:text-4xl">
             Garantiza la seguridad de los pacientes
           </p>
         </div>
+
+
       </div>
+
       <div id="videoSeguridadPacientes" class="w-full h-auto hidden">
         <p class="text-secondary text-lg text-justify px-6">
           Garantiza la seguridad de los pacientes y del personal médico al minimizar el riesgo de fallas o mal
@@ -136,252 +170,281 @@
         </p>
       </div>
 
-      <!--  div 2.1 Objetivos -->
-      <div id="Objetivos">
-        <p class="text-primary flex-1 relative text-2xl text-center font-bold p-3">
-          Objetivos de la Campaña
-        </p>
-        <p class="text-primary flex-1 relative text-xl text-center font-bold p-3">
-          General
-        </p>
-
-        <div class="relative">
-          <!-- Imagen de fondo -->
-          <img src="./img/print.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0" />
-
-          <!-- Div en medio con fondo semitransparente -->
-          <div class="bg-secondary opacity-60 absolute inset-0 z-10"></div>
-
-          <!-- Texto en el centro -->
-          <div class="flex flex-col items-center justify-center absolute inset-0 z-20">
-            <p class="text-white text-center font-semibold px-10 text-xl">
-              Garantizar el óptimo funcionamiento de los equipos biomédicos para asegurar su eficacia y confiabilidad en
-              el diagnóstico y tratamiento médico, contribuyendo así a la mejora de la atención y seguridad de los
-              pacientes.
-            </p>
-          </div>
-
-        </div>
-        <div class="flex justify-center p-2">
-          <a href="#generalObVideo" id="bottonObGeneral"
-            class="w-1/3 h-10 bg-secondary rounded-full duration-300 text-white text-center pt-2">Ver Video</a>
-        </div>
-
-        <p class="text-primary flex-1 relative text-lg text-center font-bold mt-5">
-          Especificos
-        </p>
-      </div>
-
-
-      <div class="w-full h-auto grid grid-cols-2 grid-rows-2 mt-5">
-
-
-        <!-- Objetivo 2 -->
-
-        <div class="relative">
-          <!-- Imagen de fondo -->
-          <img src="./img/2_objetivo.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0" />
-
-          <!-- Div en medio con fondo semitransparente -->
-          <div class="bg-terciary opacity-50 absolute inset-0 z-10"></div>
-
-          <!-- Texto en el centro -->
-          <div class="flex flex-col items-center justify-center absolute inset-0 z-20">
-            <p class="text-white text-center p-3 text-sm">
-              Reducir incidentes y eventos adversos relacionados con pacientes y equipos biomédicos.
-            </p>
-            <div class="w-24 h-8 bg-white rounded-full duration-300 text-secondary text-center pt-0.5 pl-0.5">
-              <a href="#espeOb1" class="text-xs ">Ver Video</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Objetivo 3 -->
-
-        <div class="relative">
-          <!-- Imagen de fondo -->
-          <img src="./img/3_objetivo.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0" />
-
-          <!-- Div en medio con fondo semitransparente -->
-          <div class="bg-quartary opacity-50 absolute inset-0 z-10"></div>
-
-          <!-- Texto en el centro -->
-          <div class="flex flex-col items-center justify-center absolute inset-0 z-20">
-            <p class="text-white text-center mt-2.5 text-sm">
-              Minimizar la necesidad de mantenimientos correctivos y evitar daños por uso inadecuado.
-            </p>
-            <div class="w-24 h-8 bg-white rounded-full duration-300 text-secondary text-center mt-3 pt-0.5 pl-0.5">
-              <a href="#espeOb2" class="text-xs ">Ver Video</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Objetivo 4 -->
-
-        <div class="relative">
-          <!-- Imagen de fondo -->
-          <img src="./img/4_objetivo.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0" />
-
-          <!-- Div en medio con fondo semitransparente -->
-          <div class="bg-quinto opacity-40 absolute inset-0 z-10"></div>
-
-          <!-- Texto en el centro -->
-          <div class="flex flex-col items-center justify-center absolute inset-0 z-20">
-            <p class="text-white text-center p-3 text-sm">
-              Mejorar la disponibilidad y funcionamiento de los equipos biomédicos.
-            </p>
-            <div class="w-24 h-8 bg-white rounded-full duration-300 text-secondary text-center pt-0.5 pl-0.5">
-              <a href="#espeOb3" class="text-xs ">Ver Video</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Objetivo 5 -->
-
-        <div class="relative">
-          <!-- Imagen de fondo -->
-          <img src="./img/5_objetivo.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0" />
-
-          <!-- Div en medio con fondo semitransparente -->
-          <div class="bg-sexto opacity-60 absolute inset-0 z-10"></div>
-
-          <!-- Texto en el centro -->
-          <div class="flex flex-col items-center justify-center absolute inset-0 z-20">
-            <p class="text-white text-center text-sm mt-6">
-              Evitar que equipos queden fuera de servicio.
-            </p>
-            <div class="w-24 h-8 bg-white rounded-full duration-300 text-secondary text-center mt-10 pt-0.5 pl-0.5">
-              <a href="#espeOb4" class="text-xs ">Ver Video</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!--  div 2.2 Objetivos -videos -->
-
-      <div class="w-full h-auto flex flex-col">
-        <div id="generalObVideo" class="w-full h-auto bg-secondary">
-          <div class="flex flex-col items-center justify-center inset-0 z-20">
-            <p class="text-white text-justify font-semibold p-5 text-3xl">General</p>
-
-          </div>
-          <div class="mt-2">
-            <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0"></video>
-          </div>
-        </div>
-
-        <div id="espeOb1" class="w-full h-auto bg-terciary bg-opacity-50">
-          <div class="flex flex-col items-center justify-center inset-0 z-20">
-            <p class="text-white text-center font-semibold p-5 text-xl">Reducción de incidentes</p>
-
-          </div>
-          <div class="mt-2">
-            <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0"></video>
-          </div>
-        </div>
-
-        <div id="espeOb2" class="w-full h-auto bg-quartary">
-          <div class="flex flex-col items-center justify-center inset-0 z-20">
-            <p class="text-white text-center font-semibold p-5 text-xl">Menos reparaciones y daños</p>
-
-          </div>
-          <div class="mt-2">
-            <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0"></video>
-          </div>
-        </div>
-
-        <div id="espeOb3" class="w-full h-auto bg-ocho bg-opacity-50">
-          <div class="flex flex-col items-center justify-center inset-0 z-20">
-            <p class="text-white text-center font-semibold p-5 text-xl">Mayor disponibilidad de equipos = mayor
-              capacidad de atención</p>
-
-          </div>
-          <div class="mt-2">
-            <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0"></video>
-          </div>
-        </div>
-
-        <div id="espeOb4" class="w-full h-auto bg-siete bg-opacity-50">
-          <div class="flex flex-col items-center justify-center inset-0 z-20">
-            <p class="text-white text-center font-semibold p-5 text-xl">Evitar fuera de servicio</p>
-
-          </div>
-          <div class="mt-2">
-            <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0"></video>
-          </div>
-        </div>
-
-
-      </div>
     </div>
 
-    <!--  div 3 consejos -videos -->
 
-    <div id="Cuidados" class="w-full h-auto">
 
-      <p class="text-primary flex-1 order-1 relative text-xl text-center font-bold p-4">
-        Consejos para el uso y el cuidado de dispositivos biomédicos
+  </div>
+
+
+
+
+
+
+
+  <!--  div 2.1 Objetivos -->
+
+  <div class="w-full h-auto">
+    <div id="Objetivos">
+      <p
+        class="py-5 text-primary flex-1 relative text-2xl text-center font-bold  sm:text-3xl md:text-4xl xl:text-5xl">
+        Objetivos de la Campaña
+      </p>
+      <p class="text-primary flex-1 relative text-xl text-center font-bold  md:text-2xl xl:text-4xl 2xl:py-2">
+        General
       </p>
 
-      <div class="flex space-x-4">
-        <div class="w-1/3 h-full p-1 flex flex-col space-y-2">
-          <button id="bottomLimpieza"
-            class="relative w-full h-20 bg-white rounded-lg text-primary shadow-sm text-xs dark:bg-gray-900 dark:text-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 lg:ml-16">
-            Limpieza periódica
-          </button>
 
-          <button id="bottomMantenimiento"
-            class="relative w-full h-20 bg-white rounded-lg text-primary shadow-sm text-xs dark:bg-gray-900 dark:text-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 lg:ml-16">
-            Mantenimiento preventivo
-          </button>
-
-          <button id="bottomAlmacenamiento"
-            class="relative w-full h-20 bg-white rounded-lg text-primary shadow-sm text-xs dark:bg-gray-900 dark:text-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 lg:ml-16">
-            Almacenamiento adecuado
-          </button>
-
-          <button id="bottomCapacitacion"
-            class="relative w-full h-20 bg-white rounded-lg text-primary shadow-sm text-xs dark:bg-gray-900 dark:text-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 lg:ml-16">
-            Capacitación del personal
-          </button>
-
-
+      <div class="relative lg:h-xl96">
+        <!-- Imagen de fondo -->
+        <div class="hidden lg:flex flex-col items-center absolute inset-0 z-20 ">
+          <p
+            class="text-white text-center font-semibold px-32 text-4xl xl:pt-5 lg:leading-normal xl:leading-loose 2xl:leading-loose 2xl:pt-3 lg:mt-4">
+            Garantizar el óptimo funcionamiento de los equipos biomédicos para asegurar su eficacia y confiabilidad en
+            el diagnóstico y tratamiento médico, contribuyendo así a la mejora de la atención y seguridad de los
+            pacientes.
+          </p>
         </div>
 
-        <div class="relative w-2/3 h-full">
-          <video id="ConseVideo1" src="./video/1_objetivo.mp4" controls preload="auto"
-            class="hidden w-full h-full rounded-md object-cover z-0"></video>
-          <video id="ConseVideo2" src="./video/prueba.MP4" controls preload="auto"
-            class="hidden w-full h-full rounded-md object-cover z-0"></video>
-            <video id="ConseVideo3" src="./video/1_objetivo.mp4" controls preload="auto"
-            class="hidden w-full h-full rounded-md object-cover z-0"></video>
-          <video id="ConseVideo4" src="./video/prueba.MP4" controls preload="auto"
-            class="hidden w-full h-full rounded-md object-cover z-0"></video>
-          <img src="./img/heart.png" alt="" />
+        <img src="./img/print.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0 lg:object-contain lg:scale-75 lg:pt-80" />
+
+        <!-- Div en medio con fondo semitransparente -->
+        <div class="bg-secondary opacity-60 absolute inset-0 z-10 "></div>
+        <!-- Texto en el centro -->
+        <div class="flex flex-col items-center justify-center absolute inset-0 z-20 lg:hidden ">
+          <p
+            class="text-white text-center font-semibold px-10 text-xl sm:text-3xl sm:px-16 sm:leading-normal md:text-4xl md:px-16 md:leading-normal lg:text-5xl lg:p-24 lg:leading-normal 2xl:text-6xl 2xl:leading-loose 2xl:p-32">
+            Garantizar el óptimo funcionamiento de los equipos biomédicos para asegurar su eficacia y confiabilidad en
+            el diagnóstico y tratamiento médico, contribuyendo así a la mejora de la atención y seguridad de los
+            pacientes.
+          </p>
         </div>
+
       </div>
+
+      <div class="  flex justify-center p-2 lg:hidden">
+        <a href="#generalObVideo" id="bottonObGeneral"
+          class="w-1/3 h-10 bg-secondary rounded-full duration-300 text-white text-center pt-2 md:text-lg md:w-32 md:h-14 md:pt-3">Ver
+          Video</a>
+      </div>
+
+      <p class="text-primary flex-1 relative text-lg text-center font-bold mt-5 md:text ">
+        Especificos
+      </p>
     </div>
 
-    < <!-- div 5 cronograma -->
 
-      <div id="Cronograma" class="pt-5 w-full h-auto bg-gradient-to-l from-cyan-500 to-teal-200 hover:bg-gradient-to-r">  
-        <p class="text-primary flex-1 order-1 relative text-xl text-center font-bold p-4">
-          Cronograma
-        </p>
-        <img class="relative" src="./img/cronograma.png" alt="" />
+    <div class="w-full h-auto grid grid-cols-2 grid-rows-2 ">
+
+
+      <!-- Objetivo 2 -->
+
+      <div class="relative">
+        <!-- Imagen de fondo -->
+        <img src="./img/2_objetivo.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0" />
+
+        <!-- Div en medio con fondo semitransparente -->
+        <div class="bg-terciary opacity-50 absolute inset-0 z-10"></div>
+
+        <!-- Texto en el centro -->
+        <div class="flex flex-col items-center justify-center absolute inset-0 z-20">
+          <p class="text-white text-center p-3 text-sm md:text-3xl">
+            Reducir incidentes y eventos adversos relacionados con pacientes y equipos biomédicos.
+          </p>
+          <div class="w-24 h-8 bg-white rounded-full duration-300 text-secondary text-center pt-0.5 pl-0.5">
+            <a href="#espeOb1" class="text-xs ">Ver Video</a>
+          </div>
+        </div>
       </div>
 
-      <!--  div 6 unete al equipo -->
+      <!-- Objetivo 3 -->
 
-      <div class="w-full h-auto flex flex-col pt-11">
+      <div class="relative ">
+        <!-- Imagen de fondo -->
+        <img src="./img/3_objetivo.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0" />
 
-        <p class="mt-2 text-primary flex-1 order-1 relative text-xl text-center font-bold">
-          Se parte del cambio
-        </p>
+        <!-- Div en medio con fondo semitransparente -->
+        <div class="bg-quartary opacity-50 absolute inset-0 z-10"></div>
 
-        <img class="scale-65 relative order-2" src="./img/se_parte.png" alt="" />
+        <!-- Texto en el centro -->
+        <div class="flex flex-col items-center justify-center absolute inset-0 z-20">
+          <p class="text-white text-center mt-2.5 text-sm md:text-3xl">
+            Minimizar la necesidad de mantenimientos correctivos y evitar daños por uso inadecuado.
+          </p>
+          <div class="w-24 h-8 bg-white rounded-full duration-300 text-secondary text-center mt-3 pt-0.5 pl-0.5">
+            <a href="#espeOb2" class="text-xs ">Ver Video</a>
+          </div>
+        </div>
       </div>
+
+      <!-- Objetivo 4 -->
+
+      <div class="relative">
+        <!-- Imagen de fondo -->
+        <img src="./img/4_objetivo.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0" />
+
+        <!-- Div en medio con fondo semitransparente -->
+        <div class="bg-quinto opacity-40 absolute inset-0 z-10"></div>
+
+        <!-- Texto en el centro -->
+        <div class="flex flex-col items-center justify-center absolute inset-0 z-20">
+          <p class="text-white text-center p-3 text-sm md:text-3xl">
+            Mejorar la disponibilidad y funcionamiento de los equipos biomédicos.
+          </p>
+          <div class="w-24 h-8 bg-white rounded-full duration-300 text-secondary text-center pt-0.5 pl-0.5">
+            <a href="#espeOb3" class="text-xs ">Ver Video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Objetivo 5 -->
+
+      <div class="relative">
+        <!-- Imagen de fondo -->
+        <img src="./img/5_objetivo.png" alt="bioimpresora3D" class="w-full h-full object-cover z-0" />
+
+        <!-- Div en medio con fondo semitransparente -->
+        <div class="bg-sexto opacity-60 absolute inset-0 z-10"></div>
+
+        <!-- Texto en el centro -->
+        <div class="flex flex-col items-center justify-center absolute inset-0 z-20">
+          <p class="text-white text-center text-sm mt-6 md:text-3xl">
+            Evitar que equipos queden fuera de servicio.
+          </p>
+          <div class="w-24 h-8 bg-white rounded-full duration-300 text-secondary text-center mt-10 pt-0.5 pl-0.5">
+            <a href="#espeOb4" class="text-xs ">Ver Video</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--  div 2.2 Objetivos -videos -->
+
+    <div class="w-full h-auto flex flex-col">
+
+
+      <div id="generalObVideo" class="w-full h-auto bg-secondary lg:h-lg96 flex flex-col justify-center items-center space-y-5">
+        <div class="flex flex-col items-center justify-center inset-0 z-20">
+          <p class="text-white text-justify font-semibold p-5 text-xl lg:p-0  lg:text-3xl">General</p>
+
+        </div>
+        <div class="mt-2 lg:mt-0 lg:w-2/3 lg:h-2/3  flex justify-center items-center ">
+          <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0 lg: lg:rounded-xl"></video>
+        </div>
+      </div>
+
+
+      <div id="espeOb1" class="w-full h-auto bg-terciary lg:h-lg96 flex flex-col justify-center items-center space-y-5">
+        <div class="flex flex-col items-center justify-center inset-0 z-20">
+          <p class="text-white text-justify font-semibold p-5 text-xl lg:p-0 lg:text-3xl">Reducción de incidentes</p>
+        </div>
+        <div class="mt-2 lg:mt-0 lg:w-2/3 lg:h-2/3  flex justify-center items-center">
+          <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0 lg: lg:rounded-xl"></video>
+        </div>
+      </div>
+
+      <div id="espeOb2" class="w-full h-auto bg-quartary lg:h-lg96 flex flex-col justify-center items-center space-y-5">
+        <div class="flex flex-col items-center justify-center inset-0 z-20">
+          <p class="text-white text-justify font-semibold p-5 text-xl lg:p-0 lg:text-3xl">Menos reparaciones y daños</p>
+
+        </div>
+        <div class="mt-2 lg:mt-0 lg:w-2/3 lg:h-2/3  flex justify-center items-center">
+          <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0 lg: lg:rounded-xl"></video>
+        </div>
+      </div>
+
+      <div id="espeOb3" class="w-full h-auto bg-sexto lg:h-lg96 flex flex-col justify-center items-center space-y-5">
+        <div class="flex flex-col items-center justify-center inset-0 z-20">
+          <p class="text-white text-justify font-semibold p-5 text-xl lg:p-0 lg:text-3xl">Mayor disponibilidad de equipos = mayor
+            capacidad de atención</p>
+
+        </div>
+        <div class="mt-2 lg:mt-0 lg:w-2/3 lg:h-2/3  flex justify-center items-center">
+          <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0 lg: lg:rounded-xl"></video>
+        </div>
+      </div>
+
+      <div id="espeOb4" class="w-full h-auto bg-ocho lg:h-lg96 flex flex-col justify-center items-center space-y-5">
+        <div class="flex flex-col items-center justify-center inset-0 z-20">
+          <p class="text-white text-justify font-semibold p-5 text-xl lg:p-0 lg:text-3xl">Evitar fuera de servicio</p>
+
+        </div>
+        <div class="mt-2 lg:mt-0 lg:w-2/3 lg:h-2/3  flex justify-center items-center">
+          <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0 lg: lg:rounded-xl"></video>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!--  div 3 consejos -videos -->
+
+  <div id="Cuidados" class="w-full h-auto">
+
+    <p class="text-primary flex-1 order-1 relative text-xl text-center font-bold m-5 md:text-2xl lg:text-3xl xl:pb-10">
+      Consejos para el uso y el cuidado de dispositivos biomédicos
+    </p>
+
+    <div class="flex space-x-4">
+      <div class="w-1/3 h-full p-1 flex flex-col space-y-2 md:space-y-8">
+        <button id="bottomLimpieza"
+          class="relative w-full h-20 bg-white rounded-lg text-primary shadow-lg text-xs dark:bg-gray-900 dark:text-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 lg:ml-16 md:text-lg xl:w-2/3">
+          Limpieza periódica
+        </button>
+
+        <button id="bottomMantenimiento"
+          class="relative w-full h-20 bg-white rounded-lg text-primary shadow-lg text-xs dark:bg-gray-900 dark:text-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 lg:ml-16 md:text-lg xl:w-2/3">
+          Mantenimiento preventivo
+        </button>
+
+        <button id="bottomAlmacenamiento"
+          class="relative w-full h-20 bg-white rounded-lg text-primary shadow-lg text-xs dark:bg-gray-900 dark:text-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 lg:ml-16 md:text-lg xl:w-2/3">
+          Almacenamiento adecuado
+        </button>
+
+        <button id="bottomCapacitacion"
+          class="relative w-full h-20 bg-white rounded-lg text-primary shadow-lg text-xs dark:bg-gray-900 dark:text-white transition-all duration-500 ease-in-out hover:bg-primary hover:text-white hover:-translate-y-1 hover:scale-110 lg:ml-16 md:text-lg xl:w-2/3">
+          Capacitación del personal
+        </button>
+
+
+      </div>
+
+      <div class="relative w-2/3 h-full">
+        <video id="ConseVideo1" src="./video/1_objetivo.mp4" controls preload="auto"
+          class="hidden w-full h-full rounded-md object-cover z-0"></video>
+        <video id="ConseVideo2" src="./video/prueba.MP4" controls preload="auto"
+          class="hidden w-full h-full rounded-md object-cover z-0"></video>
+        <video id="ConseVideo3" src="./video/1_objetivo.mp4" controls preload="auto"
+          class="hidden w-full h-full rounded-md object-cover z-0"></video>
+        <video id="ConseVideo4" src="./video/prueba.MP4" controls preload="auto"
+          class="hidden w-full h-full rounded-md object-cover z-0"></video>
+        <img src="./img/heart.png" alt="" class="hover:scale-125" />
+      </div>
+    </div>
+  </div>
+
+  < <!-- div 5 cronograma -->
+
+    <div id="Cronograma" class="pt-5 w-full h-auto bg-gradient-to-l from-cyan-500 to-teal-200 hover:bg-gradient-to-r flex flex-col">
+      <p class="text-primary flex-1 order-1 relative text-xl text-center font-bold p-4 xl:text-3xl">
+        Cronograma
+      </p>
+      <img class="relative order-2" src="./img/cronograma.png" alt="" />
+    </div>
+
+    <!--  div 6 unete al equipo -->
+
+    <div class="w-full h-auto flex flex-col pt-11">
+
+      <p class="mt-2 text-primary flex-1 order-1 relative text-xl text-center font-bold">
+        Se parte del cambio
+      </p>
+
+      <img class="scale-65 relative order-2" src="./img/se_parte.png" alt="" />
+    </div>
 </body>
 <script src="main.js"></script>
 
