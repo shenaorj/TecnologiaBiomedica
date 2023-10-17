@@ -48,7 +48,7 @@
       </ul>
     </div>
   </nav>
-  <nav class="hidden bg-white h-12 w-full lg:flex fixed z-30 justify-center items-center">
+  <nav class="hidden bg-white h-12 w-full lg:flex fixed z-30 justify-center items-center animate-slide-down">
 
     <div class="flex space-x-8 lg:space-x-16 place-content-center">
 
@@ -78,11 +78,11 @@
   <div
     class="h-full flex flex-col items-center space-y-5 bg-gradient-to-l from-cyan-100 to-teal-50 hover:bg-gradient-to-r p-6  ">
 
-    <p id="" class=" text-primary flex-1 text-xl text-center font-bold pt-5 mt-8 sm:text-2xl md:text-3xl 2xl:text-4xl">
+    <p id="" class=" text-primary flex-1 text-xl text-center font-bold pt-5 mt-8 sm:text-2xl md:text-3xl 2xl:text-4xl ">
       Tecnología Biomédica: “Tu Salud en Tus Manos,Tu Responsabilidad."
     </p>
     <!--  videos semanales -->
-    <p id="VideoSemanal" class="text-secondary text-xl text-center font-bold p-4 sm:text-2xl md:text-3xl 2xl:text-4xl">
+    <p id="VideoSemanal" class="text-secondary text-xl text-center font-bold p-4 sm:text-2xl md:text-3xl 2xl:text-4xl animate-fade-in">
       Video de la semana
     </p>
     <video src="./video/1_objetivo.mp4" controls preload="auto"
@@ -96,6 +96,15 @@
     <img src="./img/siingmi-horo.png" alt="SIINGMI" class="scale-75 md:scale-95 hover:scale-100" />
     <img src="./img/h_exito.png" alt="Historias de exito" class=" mt-16 md:scale-75 hover:scale-90" />
   </div>
+
+<div class="flex justify-center m-10">
+    <a href="#seCambio" class="text-primary scroll-trigger">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12 animate-bounce">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l3 3m0 0l3-3m-3 3v-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+  </div>
+  
 
 
   <!--  div 2 ¿por que es importante? -->
@@ -123,11 +132,15 @@
 
       </div>
 
-      <div id="videoFuncionamiento" class="w-full h-auto hidden">
-        <p class="text-secondary text-lg text-justify px-6 ">
+     
+
+      <div id="videoFuncionamiento" class="w-full h-auto hidden ">
+        <div class="flex items-center justify-center">
+        <p class="text-secondary text-lg text-justify px-6">
           Asegurar que los equipos funcionen de manera óptima y sean
           confiables para su uso en diagnóstico y tratamiento médico.
         </p>
+      </div>
       </div>
 
       <div id="toggleVidaUtil" class="flex flex-row lg:mx-40">
@@ -143,9 +156,11 @@
 
       </div>
       <div id="videoVidaUtil" class="w-full h-auto hidden">
+        <div class="flex items-center justify-center">
         <p class="text-secondary text-lg text-justify px-6">
           Prolonga la vida útil de los equipos y reduce los costos de reparación y reemplazo.
         </p>
+        </div>
       </div>
 
 
@@ -164,10 +179,12 @@
       </div>
 
       <div id="videoSeguridadPacientes" class="w-full h-auto hidden">
+        <div class="flex items-center justify-center">
         <p class="text-secondary text-lg text-justify px-6">
           Garantiza la seguridad de los pacientes y del personal médico al minimizar el riesgo de fallas o mal
           funcionamiento de los equipos.
         </p>
+        </div>
       </div>
 
     </div>
@@ -426,7 +443,7 @@
     </div>
   </div>
 
-  < <!-- div 5 cronograma -->
+   <!-- div 5 cronograma -->
 
     <div id="Cronograma" class="pt-5 w-full h-auto bg-gradient-to-l from-cyan-500 to-teal-200 hover:bg-gradient-to-r flex flex-col">
       <p class="text-primary flex-1 order-1 relative text-xl text-center font-bold p-4 xl:text-3xl">
@@ -437,7 +454,7 @@
 
     <!--  div 6 unete al equipo -->
 
-    <div class="w-full h-auto flex flex-col pt-11">
+    <div id="seCambio" class="w-full h-auto flex flex-col pt-11">
 
       <p class="mt-2 text-primary flex-1 order-1 relative text-xl text-center font-bold">
         Se parte del cambio

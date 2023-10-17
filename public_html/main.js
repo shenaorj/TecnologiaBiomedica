@@ -77,3 +77,18 @@ function consejoVideo4() {
     ConseVideo2.classList.add("hidden");
     ConseVideo1.classList.add("hidden");
 }
+
+$(document).ready(function() {
+    $(".scroll-trigger").click(function(event) {
+      event.preventDefault();
+      var target = $(this).attr("href"); // Obtiene el valor del atributo href del enlace
+      var offset = $(target).offset().top; // Obtiene la posición superior de la sección de destino
+  
+      $("html, body").animate(
+        {
+          scrollTop: offset
+        },
+        3000 // Duración del desplazamiento en milisegundos (1 segundo en este caso)
+      );
+    });
+  });

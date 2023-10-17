@@ -23,7 +23,7 @@ types/generated/*.d.ts
 isolate*.log
 
 # Archivos generados
-
+*.mp4
 /src/corePluginList.js
 
 # Archivos generados durante las pruebas
