@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/tailwind.css" />
+  <script src="https://www.youtube.com/iframe_api"></script>
+
   <title>Campaña tecnología biomédica SIINGMI</title>
 
   <nav class="justify-between fixed z-30 lg:hidden">
@@ -86,11 +88,13 @@
       Video de la semana
     </p>
 
-     <!-- <video src="./video/1_objetivo.mp4" controls preload="auto"
-
-      class="w-full h-full rounded-md object-cover md:scale-90 lg:w-2/3 "></video> -->
-
-      <iframe class="rounded-xl p-2" width="344" height="611" src="https://www.youtube.com/embed/i0qpG4_OGu0" title="Tecnología Biomédica “Tu Salud en Tus Manos, Tu Responsabilidad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div id="video-de-la-semana">
+      <iframe class="video-iframe rounded-xl" width="344" height="611" controls title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+    
+      <!-- <iframe class="rounded-xl p-2" width="344" height="611" controls id="videoPlayer" src="https://www.youtube.com/embed/i0qpG4_OGu0" title="Tecnología Biomédica “Tu Salud en Tus Manos, Tu Responsabilidad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+      
 
     </div>
     <div class="h-full flex flex-col items-center space-y-5 ">
@@ -361,7 +365,7 @@
           <p class="text-white text-justify font-semibold p-5 text-xl lg:p-0 lg:text-3xl">Reducción de incidentes</p>
         </div>
         <div class="mt-2 lg:mt-0 lg:w-96 lg:h-lg96  flex justify-center items-center">
-          <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0 lg: lg:rounded-xl"></video>
+          <iframe class="rounded-xl p-2" width="344" id="Video3" height="611" src="https://www.youtube.com/embed/fBV6c46HwEU" title="Cuidado Tecnología Biomédica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -392,7 +396,7 @@
 
         </div>
         <div class="mt-2 lg:mt-0 lg:w-96 lg:h-lg96 flex justify-center items-center">
-          <video src="./video/1_objetivo.mp4" controls preload="auto" class="w-full h-full object-cover z-0 lg: lg:rounded-xl"></video>
+          <iframe class="rounded-xl p-2" controls id="videoPlayer" width="344" height="611" src="https://www.youtube.com/embed/zQnQPKyTDMo" title="Cuidado de equipos Biomedicos, caidas." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -514,10 +518,11 @@
   
 </div>
   
-</section>
+
 
 
 </body>
 <script src="main.js"></script>
+<script src="videos.js"></script>
 
 </html>
